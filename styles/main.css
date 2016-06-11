@@ -49,12 +49,12 @@ main, #messages-card {
 .mdl-card__supporting-text {
   width: auto;
   height: 100%;
-  padding-top: 0;
+  padding: 0 16px 0 16px;
 }
 #messages {
   overflow-y: auto;
-  margin-bottom: 10px;
-  height: calc(100% - 90px);
+  margin-bottom: 2px;
+  height: calc(100% - 60px);
   flex: 1 1 auto;
   flex-direction: column;
   display: flex;
