@@ -226,9 +226,11 @@ FriendlyChat.resetMaterialTextfield = function(element) {
 // Template for messages.
 FriendlyChat.MESSAGE_TEMPLATE =
     '<div class="message-container">' +
-      '<div class="spacing"><div class="pic"></div></div>' +
-      '<div class="message"></div>' +
+      '<div class="pic"></div>' +
+      '<div class="content">' +
       '<div class="name"></div>' +
+      '<div class="message"></div>' +
+      '</div>' +
     '</div>';
 
 // A loading image URL.

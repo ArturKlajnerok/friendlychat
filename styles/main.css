@@ -76,29 +76,28 @@ main, #messages-card {
   opacity: 1;
 }
 .message-container .pic {
+  display: inline-block;
+  vertical-align: top;
   background-image: url('/images/profile_placeholder.png');
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
   border-radius: 20px;
 }
-.message-container .spacing {
-  display: table-cell;
-  vertical-align: top;
+.message-container .content {
+  display: inline-block;
+  width: calc(100% - 50px);
 }
 .message-container .message {
-  display: table-cell;
-  width: calc(100% - 40px);
-  padding: 5px 0 5px 10px;
+  padding: 1px 0 5px 5px;
+  color: #2c2c2c;
 }
 .message-container .name {
-  display: inline-block;
-  width: 100%;
-  padding-left: 40px;
-  color: #bbb;
-  font-style: italic;
-  font-size: 12px;
+  padding: 2px 0 2px 5px;
+  color: #2c2c2c;
+  font-weight: bold;
+  font-size: 15px;
   box-sizing: border-box;
 }
 #message-form {
@@ -199,4 +198,3 @@ main, #messages-card {
   top: -1px;
   margin-right: 5px;
 }
-
