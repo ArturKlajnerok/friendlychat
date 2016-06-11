@@ -60,6 +60,9 @@ FriendlyChat.prototype.initFirebase = function() {
   this.storage = firebase.storage();
   // Initiates Firebase auth and listen to auth state changes.
   this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
+
+  // We load currently existing chant messages.
+  this.loadMessages();
 };
 
 // Loads chat messages history and listens for upcoming ones.
@@ -187,9 +190,6 @@ FriendlyChat.prototype.onAuthStateChanged = function(user) {
 
     // Hide sign-in button.
     this.signInButton.setAttribute('hidden', 'true');
-
-    // We load currently existing chant messages.
-    this.loadMessages();
   } else { // User is signed out!
     // Hide user's profile and sign-out button.
     this.userName.setAttribute('hidden', 'true');
